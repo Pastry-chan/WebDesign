@@ -1,12 +1,30 @@
-This is the selector for our <h1> heading. Selectors are CSS components that allow us to apply styling to specific HTML elements. 
-h1 {
-padding: 35px;
-text-align: center;
-background-color: snow;
-}
-h2, h3 {
-text-align: center;
-} 
 body {
-background-color: powderblue;
+  background-color: rgb(163, 83, 83);
+}
+
+h1 {
+  padding: 35px;
+  text-align: center;
+  background-color: rgb(248, 196, 196);
+}
+
+h2, h3 {
+  text-align: center;
+} 
+
+h4 {
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p, hr {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
