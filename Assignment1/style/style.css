@@ -2,4 +2,6 @@ This is the selector for our <h1> heading. Selectors are CSS components that all
 h1 {
   border: 2px solid #333
 }
-
+body {
+background-color: powderblue;
+}
