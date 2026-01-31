@@ -1,4 +1,4 @@
-#Assignment 1 re-done
+# Assignment 1 re-done
 
 My peer review feedback on assignment 1 mostly consisted of people advising me to make the background lighter than the header in order to make it pop. This was a very good idea so I kept this in mind.
 
