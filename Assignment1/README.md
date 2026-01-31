@@ -1,5 +1,5 @@
-# Unwind
+#Assignment 1 re-done
 
-## A novel by Neal Shusterman
+My peer review feedback on assignment 1 mostly consisted of people advising me to make the background lighter than the header in order to make it pop. This was a very good idea so I kept this in mind.
 
-Neal Shusterman is one of my favorite authors because he has such unique ideas and plot twists. Scythe and Unwind are two of my favorite series. Unwind was the first book I read by him. It takes place in the future where unwanted kids under 18 are sent to facilities where they are dissected and their body parts used for various things. We follow a few different characters whose stories all mash into one by the end. It is an amazing novel and I will always recommend it when I have a chance to talk about what novel I love. 
+When I re-did assignment one I wanted to keep the peer review advice in mind while also trying to practice what I've learned in other classes. I added a background image from the manga but made sure the heading was still darker than the image to make it pop. I made the text light so then it's easy to read. I also included a button to the manga for people to reac if they were interested. I wanted to make the about information and chapter in their own containers so then it's easier to seperate them an just a page divider line. I also included some little images next to the text to make it more fun to look at.
