@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Dorohedoro Favorites page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+<div class="container3">
+    <h2>My Recommendations</h2>
+</div>
+
+<table>
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Delicious in Dungeon</td>
+      <td>Ryoko Kui</td>
+      <td>Manga</td>
+    </tr>
+    <tr>
+      <td>Land of the Lustrous</td>
+      <td>Haruko Ichikawa</td>
+      <td>Manga</td>
+    </tr>
+      <tr>
+      <td>Gokurakugai</td>
+      <td>Yuto Sano</td>
+      <td>Manga</td>
+    </tr> 
+    <tr>
+      <td>Phantom Busters</td>
+      <td>Neo Shoco</td>
+      <td>Manga</td>
+    </tr> 
+  </tbody>
+</table>
+
+  <form>
+    <fieldset>
+        <legend>Favorite Book Survey</legend>
+         <label>Your Name:</label>
+         <input type="text" name="name" placeholder="e.g. Q Hayashida">
+
+         <label>Email Address:</label>
+         <input type="email" name="email" placeholder="e.g. IheartDorohedoro@gmail.com">
+
+            <label>Tell Me Your Favorite Book:</label>
+                <input type="text" name="favorite-book" placeholder="Type your favorite book here">
+                   <label>Favorite Genre:</label> 
+                    <select name="genre">
+                    <option value="classic">Horror</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="romance">Romance</option>
+            </select>
+
+ <p>Preferred Format:</p>
+      <label><input type="radio" name="format" value="print"> Print</label>
+      <label><input type="radio" name="format" value="ebook"> eBook</label>
+      <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
+
+    <label>
+      <input type="checkbox" name="subscribe" value="yes">
+      Subscribe to our monthly book club newsletter
+    </label>
+
+                <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
