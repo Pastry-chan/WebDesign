@@ -1,0 +1,1 @@
+I like how flexbox and grid are easy to understand, for me at least. I prefer them as a layout method because it's already easier for me to do the exact layout I did in the previous project but this time it didn't take me over 5 hours to figure out how to put text next to an image. I also believe this will make future projects easier and faster.
