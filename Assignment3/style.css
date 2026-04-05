@@ -202,13 +202,11 @@ fieldset {
   border: none;
   padding: 0;
 }
-
 legend {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
-
 label {
   font-size: 1.5rem;
   display: block; 
