@@ -1,0 +1,181 @@
+body {
+  background: #2b2b2b;
+  font-family: "Space Mono", monospace;
+}
+
+.card {
+  width: 800px;
+  margin: 40px auto;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+}
+
+.topbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #444;
+}
+
+.blog-preview {
+  grid-template-columns: 120px 1fr;
+  display: flex;
+  padding: 20px 20px 0;
+  gap: 20px;
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centers horizontally */
+  gap: 10px;
+}
+
+.middle {
+  width: 40%;
+}
+
+.right {
+  width: 30%;
+}
+
+.pfp {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.FAQ {
+  padding: 0px;
+}
+
+.FAQ-title {
+  background: #777;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.post {
+  border: 1px solid #555;
+  font-size: 11px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+h2 {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+.user {
+  font-weight: bold;
+  border-bottom: 1px solid #777;
+  padding-bottom: 5px;
+}
+
+.status {
+  margin: 8px 0 15px;
+}
+
+.note-box {
+  border: 1px solid #777;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+}
+
+.note-title {
+  display: inline-block;
+  background: #555;
+  padding: 2px 6px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+.actions {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.message-btn {
+  width: 60%;
+  align-self: center;
+}
+
+.right-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-side {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+} 
+
+button {
+  background: #777;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6b82867a;
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: #6b8286;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+th, td {
+  border: 1px solid white;
+  text-align: left;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.table th,
+.table td,
+.table tr {
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+}
