@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDU394 Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    
+<header id="siteHeader">
+  <h1>Learning Assistants Program</h1>
+
+<div class="right-side">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="stories.html">Stories</a></li>
+    </ul>
+  </nav>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/umontana"
+      class="fa fa-instagram" target="_blank" alt="Instagram logo"></a>
+    <a href="https://www.facebook.com/umontana/about" 
+    class="fa fa-facebook" target="_blank" alt="Facebook logo"></a>
+      <a href="https://www.youtube.com/user/UniversityOfMontana"
+       class="fa fa-youtube" target="_blank" alt="Youtube logo">
+    </a>
+      <a href="https://www.linkedin.com/school/university-of-montana"
+      class="fa fa-linkedin" target="_blank" alt="LinkedIn logo">
+    </a>
+  </div>
+</div>
+</header>
+
+
+<div class="questions">
+ 
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+
+  <div class="Qcontent">
+    <section class="section">
+      <h1>Meet the LA</h1>
+      <p>Hello, my name is Paisley Ivanovitch. I am a senior at the University of Montana, my major is Media Arts and my Minor is Japanese. I was the Learning Assistant for Japanese 202. I have been studying Japanese for 5 years and even lived in Japan for a year. </p>
+    </section>
+
+    <section class="section">
+      <h1>Why did you want to become an LA?</h1>
+      <p>More content here</p>
+    </section>
+
+    <section class="section">
+      <h1>What were some challenges and successes you had during your time as an LA?</h1>
+      <p>More content here</p>
+    </section>
+
+    <section class="section">
+      <h1>How do you think your experience as an LA benefited you overall?</h1>
+      <p>More content here</p>
+    </section>
+
+    <section class="section">
+      <h1>Would you recommend students join the LA program?</h1>
+      <p>More content here</p>
+    </section>
+  </div>
+  
+</div>
+
+<script>
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+const header = document.getElementById("siteHeader");
+
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        header.classList.add("hidden");
+      } else {
+        header.classList.remove("hidden");
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+
+
+const backgrounds = document.querySelectorAll('.bg');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const sectionHeight = window.innerHeight;
+
+  const index = Math.min(
+    backgrounds.length - 1,
+    Math.floor(scrollY / sectionHeight)
+  );
+
+  backgrounds.forEach((bg, i) => {
+    bg.classList.toggle('active', i === index);
+  });
+});
+</script>
+</body>

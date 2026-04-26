@@ -1,0 +1,358 @@
+body {
+    background-color: #BC6C25;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 130px;
+    background-color: #BC6C25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+#siteHeader {
+    position: relative;
+    z-index: 10;
+}
+#siteHeader.hidden {
+    transform: translateY(-100%);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    font-size: 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    background-color: #70002e;
+    border-radius: 5px;
+}
+.socials {
+    display: flex;
+    gap: 15px;
+}
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+.socials a:hover {
+    color: #70002e;
+}
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - 130px);
+    background-image: url("./Images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(46, 18, 0, 0.3);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.btn {
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn:hover {
+    background-color: #47001e36;
+    border:2px solid #ffffff;
+    color: #ffffff;
+}
+main {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 570px;
+    background-image: url("./Images/background3.jpg");
+    background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+.container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.container .right-side {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(46, 18, 0, 0.185);
+    z-index: 0;
+}
+.container-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card-container {
+    background-color: #fefae0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+.card {
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.card::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(112, 0, 46, 0.85) 20%,
+        rgba(112, 0, 46, 0.5) 50%,
+        rgba(112, 0, 46, 0.2) 80%,
+        transparent
+    );
+}
+.content {
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 40px;
+    margin: 30px 0 10px;
+    opacity: 0.9;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+.text-container {
+    background-color: #fefae0;
+}
+.text-container h3 {
+    font-family: 'Playfair Display', serif;
+    color: #70002e;
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+}
+.text-container p {
+    color: #70002e;
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.about-container {
+    position: relative;
+    height: 500px;
+    background-image: url("./Images/missoula.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+.about-text h3 {
+    font-family: 'Playfair Display', serif;
+    color: #70002e;
+    font-size: 70px;
+    padding: 15px;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+}
+.containerforthecontainer {
+    background-color: #fefae0;
+}
+.information {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 20px; 
+    max-width: 80%; 
+    margin: 10px auto; 
+    padding: 20px 40px;
+}
+.information img {
+    width: 30%;     
+    height: auto;  
+    border-radius: 8px; 
+    }
+.info-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.post-title {
+    font-family: 'Playfair Display', serif;
+    color: #70002e;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.post-preview {
+    font-family: 'Playfair Display', serif; 
+    font-size: 1rem;
+    color: #6d6d6d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.read-more {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #70002e;
+    margin-top: 10px;
+}
+
+
+.questions {
+    position: relative;
+    min-height: calc(100vh - 130px);
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 1;
+}
+.bg.active {
+    opacity: 1;
+}
+.bg1 {
+    background-image: url('./Images/q1.jpg');
+}
+.bg2 {
+    background-image: url('./Images/q2.jpg');
+}
+.bg3 {
+    background-image: url('./Images/q3.jpg');
+}
+.bg4 {
+    background-image: url('./Images/q4.jpg');
+}
+.bg5 {
+    background-image: url('./Images/q5.jpg');
+}
+.Qcontent {
+    position: relative;
+    z-index: 2;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    padding: 0 80px;
+    text-align: center;
+}
+.section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.section p {
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
